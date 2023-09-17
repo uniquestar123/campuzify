@@ -1,0 +1,12 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        enabled: true
+        generate_for:
+          include:
+            - lib/data/models/app_settings.dart.dart
+
+        options:
+          explicit_to_json: true
+          include_if_null: false
